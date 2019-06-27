@@ -1,0 +1,24 @@
+p {
+  font-family: Arial; color: black;
+}
+h1 {
+  font-family: Arial; color: blue;
+}
+h2{
+  color: green;
+}
+body {
+  background-color: pink;
+  margin: 50px;
+  padding: 50px; 
+}
+.description {
+    color: grey;
+    font-family: cursive;
+}
+#globalhackathon {
+    text-transform: capitalize;
+}
+#contact {
+  font-family: cursive;
+}

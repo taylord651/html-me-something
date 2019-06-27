@@ -1,7 +1,9 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <link href="styles.css" type="text/css" rel="stylesheet">
       <title>Domonique Taylor</title>
+    </head>
         <body>
           <header>
             <h1>My Tech Journey</h1>
@@ -10,7 +12,7 @@
             <article id="Global Hackathon">
               <h2>Global Hackathon</h2>
                 <img src="GlobalHackathon.jpg" alt="Global Hackathon" width="250" height="300"/>
-                <p>What was I thinking? Actually, I thought a lot about the fact that I had no coding experince and 
+                <p class="description">What was I thinking? Actually, I thought a lot about the fact that I had no coding experince and 
                    doubted how much I would be able to contribute to the team project. I was also
                    nervous about finding a team, considering that I had little to add in regards to 
                    coding our project.
@@ -22,7 +24,7 @@
             <article id="AfroTech">
               <h2>AfroTech</h2>
                 <img src="GoldenGateBridge.jpg" alt="Golden Gate Bridge" width="250" height="300"/>
-                <p>In November, 2018 I traveled to San Francisco to attend the AfroTech conference.
+                <p class="description">In November, 2018 I traveled to San Francisco to attend the AfroTech conference.
                    Thousands of black professionals in tech career fields gathered to learn about 
                    entreprenuership, technology and business. Although I didn't learn the technical
                    skills needed to start a career in tech, I met many people who were willing to
@@ -32,7 +34,7 @@
               <h2>St. Louis Public Library</h2>
                 <img src="https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/bf8cb28a-a019-447d-8704-e443e13573e9/File/e19ea0216ae8395bd4b3389970928be9/java_logo.png"
                      width="250" height="250" alt="Introduction to Java Programming"/>
-                <p>I took an online "Intro to Java" class through Gale Courses via the St. Louis Public Library. I completed
+                <p class="description">I took an online "Intro to Java" class through Gale Courses via the St. Louis Public Library. I completed
                    the course, but was no where near being proficient in the coding language. I learned 
                    how to print "Hello World" (System.out.println("Hello World!");) in BlueJ, and Integrated
                    Development Environment (IDE)</p>
@@ -41,15 +43,14 @@
               <h2>LaunchCode</h2>
                 <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAA51BMVEX///8BVIYATYMASoEAUIQARn7//v////0AUoUASIF8n7RBgZa+1tf2+/V8mava5Oigusiwxsqnv8YAUoEAQnv4/vy9ztmty8wAPnyIprqkw8eOs76Os7qmvcuDobEAQn7r+vQAPX0baowAXYfm8vHx9PQAYIhgjqObvcUAOHrz9/gATX1Ng50ARnvN4d+VtcA8dJTL2uHf7uosa45ql6a50tmdxsSesr9vmK5eh6YxdZMAX4iCqLTe8Ok4cJJ1nau4ydY4fZJdk6UAMHZFfJspdY1CbpXN49xpkKjJ1+G82NVLepojZ5AWQz5lAAAMOklEQVR4nO2cC3vaOBaGZcuy7BRPArYTl0wjiF0gBUwwYUspTWaydKe7y///PasjX7lM4kwzk2bnvE+fBKOLjz4fSUeSU0IQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEGQPwHOuU/4S1vx+nCWwwR1eyrO0rNpQsyXtuNVwckoWJwJo8NRt9pIrRbdESfnwaWP3bQ2Jm8FPRDsJui/tC2vCJ6MWQJuxjfB2Usb84q4Dtrwi5PEk8PbS1vzWph3r1XowWF4W7y0Na8EznsiyS/80EseyowUNMuJgMvJAd2tHtdBXF74Q+bg6FaDKOiViwNO7oLmS1rzangnVjAhyPlABnCETIPRS1v0KujLPiq9rbHonzsEeqnx0ha9Akw+Y5GUbRCIrghBt2svemmjXgG+q3PCI6a3fxuJheyu/QBDkMf5wCz5sykuCOlcXcqPq6Dx0jb9+PAPQpO/ml0ZrnW6S9ld3+JU+jj8A3PlT5/Si/lMzqmm9Lb5Sxv148N9zYCJoeF5QXANU0I/+M9LG/UKaNp2AhuV0ccL5WW+ZoUc1wmPEA11eiLnT9gNV2I1mD6+eGmrtlF2/cWP0tz5vQUna+/efpN9VobdiXYoA+DnMZIXP76HxkQS/bWycXIG/E5qO7jmrigX7yYPx07c7T3TmelvcOvvjJ45+UlQ2j1+DnvqYzrCttn48JFUNLQjuXgvAjWTx96akEVw9zyy/dS12dV3h4E/6ZrG/mLZiGNYmuUelmESrCDUPcqvOXnbnchfQ+Y8y70voMHfKRv/8WSLgz7hjueW38yE7FPH3vXzHDQ/h2w/oLf5Y02Oa6NusQqNvI38OehOnmcA/j+VjYyEbNRHb5JfD4KJOqKP0dsekq0tZSJR902eDDLKScR9ptn+z5WNy1gOwk0zsxaedDn1QWreLJ6m5de7rTvkIrlsh0rwRFzLuMhmWS/1x8bG4TDilTWZRaC5Uza1LY/39m3gB2TL63rSuyYHZEsazbOpk9WXN207SqzGx5wX104c+7uxM1x25oOTk0ZUlC9l41+Szm4je8JxXKqH/1JsdFcu5y+8d5UqZQ3T9uBknvDqU5Ff+/F0euyQ/fidHzfO5hEIuC/b+8ZgMmlP/afotiWbvFt00RPMZkxfRKTZu7zsZVs25/C5XRT7B1y20s9t93P4uSNDh8vAY+JysuUDUpPWV8EopZ63npLUeTPZSGNEhRBhP64+EbLwGovg/Mie9XQjXOq9jiuSZTlFcCjneTal4+7lu60brT3GmGCjJiFmpUISf3MZtcE2h1zQUjbI05CFKJVx5PBbUin1IDsBCCfnghoaYOkifscMy8tke0sNg50UBdusvGwxy2LOcWirkpYdJqUKnMQhS2vUNCO4ybxSycb7nvwNt+quqkbNvQ3dyEDkXcREEnXPSSPY6L0i2XTWnm6lNVrerFjhxJkBmmWwTVy4DifOzVWW32Bu8tYoZAOvXYvcOsu4Oq8961RkkwNW38uq0FzNot9kjXYum8xHK7LR8rIlP+s/M2WZLKYZtLKFPRdWWqH8Z2nivpQt7Nua66b3E1XdOmMjSIhP16Snk8nVb5z0h7RcyndcaKgF1bqWNtScVIGWZ8HtpTZwL1Fu0PFbqqUpyrqRUemknVBXphmqOsurvRKpyOaTlZc+E48KW9YD5tWUTdNBLkp1VUEvH1vMZKxU05nsCTLHzClkA1td3aa6apCoHCeTW1goyL7qfOuTDbhZR+/O8xqdjVJN14XsGJYxjtOEBqimGbaw0+4i4mw05n2qbNIZA+ssSC066Wew1xjrlz3KwCbRrrmrUfW2RCjJ1/OO0zm9ZcoP6sqmad669e/ThTLazlI4uYVLY3g0jafnrrf5kPYCJRs0ZXEyWAzBdL3yFhufvoWF/Pxq3mx1ri5gxI0vipcDzxn4rddvxnHrVrBsY8R3wWG8dfM4bs1saEbopxY0wBUsNptMp81R2iUK2VZgOb2eO3Jd0rgFUd2ny0YW0ACWDfRkxZ4km0jLJSE40izLpmzWlx114dzlGw+Zt12r684MpBXO7rDi029R0rqKd77Vla+l3/JBuuvLyQRsYIPMcnj89iRN+a9yryx4bqSDXCqb6YwhX/6CCV/LnKLmoUW1k8KzsFdF/PXpKZ2UpoZxHoNS+bnmN1nKCFNFIAQ0q7K5Thq6JGC9F+88ZrkwoA5Z7ka5TSY7NYvzODJ1DpPAw6KrfDOtL9WxNip/h6USwhRh+iQdNJRsnDTtyhPmcky1NP3mybKpBmulmVFQX7aKdy8NzWXzVKEejL/7xydKNloED/B86Lu93tG8mjrB9q4uJ0fU1fT7nZxqeLGMYoukA+7mqVbNpWxGsSAxVfyRy9aXbbL/0Sm4LMR+hK0ApClrNBaVueT6CTNpWW4COdMIzx+C+f7ebZVsXie3YQCVfdwzrSMumnsHpDARetPdCptMmVDmsnLLT6BRlXk68UrZlqo7eTkQirjGh32VDlCR7aP0WTqopMFYV1O2Srl3cHmuPr6XT91Y7t9UBSC0EPoMbvzzfrb1pj/cjQh6IMj73ZwfqRomirxyqDNSk47A7laZ05dBSz4lfM6ivyreXt0H2ZWtXUl7gmx2WS6TDZrwXj5a48DbQjtL+d+TrcXYTiDFYRCzhnt72h/TJ1fklSZZ6WgLsrHKOO+HpWyhCta2+AOygT/rbytp/apstBj2gfNHZQM+yEnGKuP7gpqyRWO20x1NsoToau+NkI/K9FLhOyP3gPMdP3xv553UJJcGDMpbaMMnd9IGjJ63ZRI3rFI2NYDdFWnXVh1vgx5hBV/2blpPNpPcjnfGRa7m5mqnS7+egunXpTiXIK6aitRsWdkYhikilw3GSdrwt3ly3KaiXS8uApC2qMykYJjl+mq+NNNJ93HZ1KSiHxXNyY2v6W0k2j9hmsi8xqbYkUmXntzJTU+/hnDRompiTVh1DWLyWRGAQPfaijj4E849q6sEiDutMJ/GE92teJsjQyGXZpOV3zPcWrINbBnSF0NLlHeuurId2JFIILikd1mqn+sxykxX+TuhrD8dUzlRjXLzO9/YRbjLZdhiadVNpEb9/ePqKmFgu3CLtJ6mAYvcXDaT9FUs34fn3whVsP24bLxDIa71jqCUM3DdbMuttmwHVtZquWavQS8+nwXzdIO0Ae6mh8r0RqhMnaae1/JAN70F3tC4tiuLKxlQw5LDu0gdJe5f1f07pa24zeSuejKi92nRD23Xqsgmo/8rWHPrQXg59CztcdnS6idClfJ6Xy+Z9LywQ54m277FaVBuCPfrcswMLd/q6MMDMpj75teh2nOx++mDIxx0tizKLr+6EJlVOimJYP1vUW/56dPIlfLa93V33KqdVA5Z6XaMpcPC2J5VOiknd7ba+1FbCGqjo0Ynlb0HPFgWUlszluFG3ymbHJE8WZWlbAQrrpRuctCCUUQzDLVm1ejMz4foSEt31KQJMLJsqh3zTKgkaR7YZ2k1/wJid5tynu78KMQNCGAXMQ/vi3xzMLj5IurJxp2iFFjupcvG75KNTIp9T9hYG2VjsTPyyhuJdTkF82hjlwmrQbm7Kz1rrutV80Z+rdHN5N+6QvzzuDhNSUaeDsrrNjsn8yvKupVQcaIzXdcpC+fkfWCzIJNtEDDaLWU7CRgLin1SuWAOZZXgHlTM4rQTOLB5PS7addaVJX6uO43JTrH0qAHBqc6MdnmjVuhRabyus7C9ld9fDWUBmWLLkLh5xcbZywzcNEnUt23pt4alU3E7r9lHOe98kVTeUyHJ21EYhqOJHL3fn56e/lI5nuHO/OLubhVzbvrNMun4F/m5iEDNY1nqtFqKN+6WYagtj6b5bXzIcprvW/NIVnC6s0H0oNUkPn8TuuHmvrkV1/nx6n705n4V7/zRjBSucdRfv7lpdTiPoFHVwKbTullvNsubk/qvVZu7Z25bJ1J7xz/Fg60e8uyeVO3eYvtAppLFfLjgA5RZtwwpPpvbh1BlSw6EZvi+4d8V/N8E/hCc/PrmAX5tP17F3xI+NB6ArR6v4e8IJ+6BncOCbO2B7MC5TvXfR6C3HcT0744eAv9ri4M8NpNiiIUgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyJ/H/wC4xfvcCRjslQAAAABJRU5ErkJggg=="
                      width="400" height="210" alt="Fighting Mongooses"/>
-                <p>I applied for a LaunchCode class three times. First, I applied in the summer of 2016. I never
+                <p class="description">I applied for a LaunchCode class three times. First, I applied in the summer of 2016. I never
                     completed the pre-work, and therefore, was not able to join the class. I applied again in
                     December of 2018 after completing the "Intro to Java" course. I wanted to learn more. 
                     Third time is a charm, and I applied again in March of 2019. The pre-work/quiz questions
                     were identical to the questions from my December application, so I felt confident in this part.</p>
             </article>
           <footer>
-              <p>Email | Phone | Business Address &#60 3</p>
+              <p id="contact">Email | Phone | Business Address &#60 3</p>
           </footer>
         </body>
-    </head>
   </html>
